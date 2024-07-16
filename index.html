@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--This document and index.html may be better switched around. Will look into it in the future as the page is developed.-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Gallery - pending</title>
+    <title>My travels</title>
 </head>
+
 <body>
-    <h1>My Photography</h1>
-    <p>This page may be used as a place to display some of my photogaphic work. It may also become something else in the future instead. </p>
+    <!--Using the header tag to separate the links and future menu bar from the rest of the page content-->
+    <header>
+        <p><a href="About.html">About me</a></p>
+    </header>
+
+    <!--For now, this just lists the countries (denoted by strong), and cities within those countries, where I have been. In the future, they may become links to photos or blog articles.-->
+
+    <main>
+        <p><h1>Places I've Traveled</h1></p>
+        <p>
+            <!--Nested unordered lists seemed to be the best way to organize countries and cities. It wasn't too difficult to figure out how to nest them like this. Unordered seemed better than ordered for this.-->
+
+            <!--To improve readability, I inserted break tags between countries in the unordered list-->
+            <ul>
+                <li><strong>Russia</strong></li>
+                    <ul>
+                        <li>Moscow</li>
+                        <li>Zelenograd</li>
+                        <li>Dolgoprudnyy</li>
+                        <li>St. Petersburg</li>
+                    </ul>
+                    <br />
+                <li><strong>China</strong></li>
+                    <ul>
+                        <li>Nanjing</li>
+                        <li>Wuhu</li>
+                        <li>Beijing</li>
+                        <li>Xi'an</li>
+                        <li>Chengdu</li>
+                        <li>Harbin</li>
+                        <li>Qingdao</li>
+                        <li>Zhangjiajie</li>
+                    </ul>
+                    <br />
+                <li><strong>Japan</strong></li>
+                    <ul>
+                        <li>Tokyo</li>
+                        <li>Kyoto</li>
+                        <li>Osaka</li>
+                    </ul>
+                    <br />
+                <li><strong>New Zealand</strong></li>
+                    <ul>
+                        <li>Auckland</li>
+                        <li>Hobbiton Movie Set</li>
+                        <li>Palmerston North</li>
+                    </ul>
+            </ul>
+        </p>
+    </main>
+
+    <!--Documenting at the end of the document that I am copyrighting this page for myself.-->
+    <footer>
+        <p>&copy; Joshua Horton 2024</p>
+    </footer>
 </body>
 </html>

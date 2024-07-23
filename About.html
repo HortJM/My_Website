@@ -1,30 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About me</title>
-    </head>
+<!--This document and index.html may be better switched around. Will look into it in the future as the page is developed.-->
 
-    <body>
-        <!--Adding a header where all the links and a potential menu bar will go in future-->
-        <header>
-            <a href="index.html">Home</a>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My travels</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-        <!--In the main part of the boy, I am writing about myself and including a portrait photo at the end-->
-        <main>
-            <h1>About me</h1>
-            <p>I'm Joshua Horton. I have earned a BA in Political Science. After that, I went and taught English as a second or other language in Russia for nine months. Followed by seven years teaching English in China. I am now working on a career change and a degree in Computer Information Systems.</p>
-            <img src="../My_Website/images/portrait.jpg" alt="portrait photo of Joshua Horton" width="200px">
-        </main>
+<body>
+    <!--Using the header tag to separate the links and future menu bar from the rest of the page content-->
+    <header>
+        <p><a href="index.html">About me</a></p>
+    </header>
 
-        <!--Documenting at the end of the document that the page is copyrighted by myself-->
-        <footer>
-            <p>&copy;Joshua Horton 2024</p>
-        </footer>
+    <!--For now, this just lists the countries (denoted by strong), and cities within those countries, where I have been. In the future, they may become links to photos or blog articles.-->
 
-    </body>
+    <main>
+        <p><h1>Places I've Traveled</h1></p>
+        <p>
+            <!--Nested unordered lists seemed to be the best way to organize countries and cities. It wasn't too difficult to figure out how to nest them like this. Unordered seemed better than ordered for this.-->
 
+            <!--To improve readability, I inserted break tags between countries in the unordered list-->
+            <ul id="travels">
+                <li class="country">Russia</li>
+                    <ul>
+                        <li>Moscow</li>
+                        <li>Zelenograd</li>
+                        <li>Dolgoprudnyy</li>
+                        <li>St. Petersburg</li>
+                    </ul>
+                    <br />
+                <li class="country">China</li>
+                    <ul>
+                        <li>Nanjing</li>
+                        <li>Wuhu</li>
+                        <li>Beijing</li>
+                        <li>Xi'an</li>
+                        <li>Chengdu</li>
+                        <li>Harbin</li>
+                        <li>Qingdao</li>
+                        <li>Zhangjiajie</li>
+                    </ul>
+                    <br />
+                <li class="country">Japan</li>
+                    <ul>
+                        <li>Tokyo</li>
+                        <li>Kyoto</li>
+                        <li>Osaka</li>
+                    </ul>
+                    <br />
+                <li class="country">New Zealand</li>
+                    <ul>
+                        <li>Auckland</li>
+                        <li>Hobbiton Movie Set</li>
+                        <li>Palmerston North</li>
+                    </ul>
+            </ul>
+        </p>
+    </main>
+
+    <!--Documenting at the end of the document that I am copyrighting this page for myself.-->
+    <footer>
+        <p>&copy; Joshua Horton 2024</p>
+    </footer>
+</body>
 </html>

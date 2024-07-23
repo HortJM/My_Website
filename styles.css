@@ -1,0 +1,41 @@
+/* !!!!!!!! USE RELATIVE UNITS IN ALL STYLE RULES !!!!!!!!! */
+/* !!!!!!!! USE HEXCODE ONLY FOR COLOR CHOICE !!!!!!!!!! */
+
+/* TYPE SELECTOR */
+p {
+    line-height: 1.5em;
+}
+
+/* ID SELECTOR */
+
+#travels {
+    color: #1c5710;
+    font-size: 0.85em;
+}
+
+/* RELATIONAL SELECTOR */
+footer p{
+    font-size: 0.75em;
+    font-weight: bold;
+}
+
+/* COMBINATION SELECTOR */
+
+li.country {
+    font-size: 1.0em;
+    font-weight:bolder;
+    color:#390153;
+}
+
+/* ATTRIBUTE SELECTOR */
+
+/* change the Travels link to grey on mouse-over */
+a:hover{
+    color:#2f4f4f;
+}
+
+/* TWO PROPERTIES TO STYLE FONTS */
+* {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1.1em;
+}

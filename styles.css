@@ -11,6 +11,7 @@ p {
 #travels {
     color: #1c5710;
     font-size: 0.85em;
+    margin-left: 2%;
 }
 
 /* RELATIONAL SELECTOR */
@@ -38,4 +39,49 @@ a:hover{
 * {
    font-family: Arial, Helvetica, sans-serif;
    font-size: 1.1em;
+}
+
+#portrait {
+    float: right;
+    width: 20%;
+    border: 3px solid #000000;
+    margin-right: 2%;
+    
+}
+
+#about_me {
+    float: left;
+    width: 70%;
+    padding-left: 2%;
+}
+
+.clear {
+    clear: both;
+}
+
+#location_list {
+    background-image: url(images/Background/crab_stairs.JPG);
+    background-size: cover;
+}
+
+.gallery {
+    column-count: 3;
+    column-gap: normal;
+    column-rule: solid #000000 2px;
+}
+
+/* some properties were discovered trhough generative AI (box-sizing and display:block) as I struggled to get images to do what exactly I wanted.
+Still not perfect, but much better than it was. */
+.gallery img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+}
+
+#China {
+    background:linear-gradient(155deg, #FFFF99, #FF0000 55%);
 }

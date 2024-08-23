@@ -1,0 +1,85 @@
+/* Define the grid layout for the entire page */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+}
+
+/* Style for header */
+header {
+    grid-area: header;
+    background-color: #f0f0f0;
+    padding: 1em;
+}
+
+/* Style for navigation menu */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display items in a single line */
+}
+
+nav li {
+    margin: 0 1em; /* Space between menu items */
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #007BFF; /* Change color on hover */
+}
+
+/* Style for main content */
+main {
+    grid-area: main;
+    padding: 1em;
+}
+
+/* Style for section headings */
+main h1 {
+    margin-top: 0;
+}
+
+
+/* Style for footer */
+footer {
+    grid-area: footer;
+    background-color: #f0f0f0;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Style for Back to Top link */
+.back-to-top {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #0056b3;
+}

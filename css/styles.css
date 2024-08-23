@@ -1,0 +1,75 @@
+/* !!!!!!!! USE RELATIVE UNITS IN ALL STYLE RULES !!!!!!!!! */
+/* !!!!!!!! USE HEXCODE ONLY FOR COLOR CHOICE !!!!!!!!!! */
+
+p {
+    line-height: 1.5em;
+}
+
+#travels {
+    color: #1c5710;
+    font-size: 0.85em;
+    margin-left: 2%;
+}
+
+footer p{
+    font-size: 0.75em;
+    font-weight: bold;
+}
+
+li.country {
+    font-size: 1.0em;
+    font-weight:bolder;
+    color:#390153;
+}
+
+* {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1.1em;
+}
+
+#portrait {
+    float: right;
+    width: 20%;
+    border: 3px solid #000000;
+    margin-right: 2%;
+    
+}
+
+#about_me {
+    float: left;
+    width: 70%;
+    padding-left: 2%;
+}
+
+.clear {
+    clear: both;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25em; /* Space between images */
+    justify-content: center;
+}
+
+.gallery a {
+    position: relative;
+    flex: 1 1;
+    box-sizing: border-box;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Set a fixed size for the images */
+    max-height: 200px;
+    object-fit: cover;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    padding: 0.1em;
+    margin: 0.7em;
+}
+
+.gallery a:hover img {
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
